@@ -1,0 +1,47 @@
+$(document).ready(function()
+{
+    $('#botonarriba').click(function()
+    {
+        $('div').css('background','white');
+        $('.Cuadro1').css('background','red');
+    });
+    $('#botonabajo').click(function()
+    {
+        $('div').css('background','white');
+        $('.Cuadro7').css('background','red');
+    })
+    $('#botonizq').click(function()
+    {
+        $('div').css('background','white');
+        $('.Cuadro1:first,.Cuadro2:first,.Cuadro3:first,.Cuadro4:first,.Cuadro5:first,.Cuadro6:first,.Cuadro7:first,.Cuadro8:first').css('background','red');
+    })
+    $('#botondir').click(function()
+    {
+        $('div').css('background','white');
+        $('.Cuadro1:last,.Cuadro2:last,.Cuadro3:last,.Cuadro4:last,.Cuadro5:last,.Cuadro6:last,.Cuadro7:last,.Cuadro8:last').css('background','red');
+    })
+    $('#marco').click(function()
+    {
+        $('div').css('background','white');
+    $('.Cuadro2:first,.Cuadro3:first,.Cuadro4:first,.Cuadro5:first,.Cuadro6:first,.Cuadro1:last,.Cuadro2:last,.Cuadro3:last,.Cuadro4:last,.Cuadro5:last,.Cuadro6:last,.Cuadro1,.Cuadro7').css('background','red');
+    })
+    $('#cruz').click(function()
+    {
+        $('div').css('background','white');
+        $('.Cuadro4,.Cuadro1:nth-child(5),.Cuadro2:nth-child(5)').css('background','red');
+    })
+    $('#zeta').click(function()
+    {
+        $('div').css('background','white');
+        $('.Cuadro1,.Cuadro7,#cuadro14,#cuadro21,#cuadro28,#cuadro35,#cuadro42,#cuadro49').css('background','red');
+    })
+    $('#limpiar').click(function()
+    {
+        $('.Cuadro1,.Cuadro2,.Cuadro3,.Cuadro4,.Cuadro5,.Cuadro6,.Cuadro7').css('background','white');
+    })
+    $('#equis').click(function()
+    {
+        $('div').css('background','white');
+        $('.Cuadro1:nth-of-type(6n+1),.Cuadro2:nth-of-type(6n+1),.Cuadro3:nth-of-type(6n+1),.Cuadro4:nth-of-type(6n+1),.Cuadro5:nth-of-type(6n+1),.Cuadro6:nth-of-type(6n+1),.Cuadro7:nth-of-type(6n+1)').css('background','red');
+    })
+});
